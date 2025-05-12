@@ -26,6 +26,15 @@
       });
     </script>
   
+    <style>
+      .fixed-video {
+        width: 320px;
+        height: 320px;
+        object-fit: contain; /* or 'contain' if you want full video shown with black bars */
+      }
+    </style>
+
+
   </head>
     
     <body>
@@ -628,12 +637,13 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A street performer playing the guitar. Low Poly Digital Art, geometric shapes, vibrant colors, flat texture, sharp edges, gradient shading, modern graphic style.</h3>
+            <h6 style="line-height: 1.6;"> A street performer <span style="color: blue;">playing the guitar</span>. Low Poly Digital Art, <span style="color: blue;">geometric shapes</span>, vibrant colors, flat texture, sharp edges, gradient shading, modern graphic style.</h3>
             </div>
           </div>
           <!-- Video -->
           <div style="text-align: center;">
-            <video controls style="width: 80%; height: auto;">
+            <!-- <video controls style="width: 80%; height: auto;"> -->
+            <video controls id="videocrafter" class="fixed-video">
               <source src="src/video/style/prompt00-style02-VideoA.mp4" type="video/mp4">
             </video>
           </div>
@@ -646,11 +656,12 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A street performer playing the guitar. Low Poly Digital Art, geometric shapes, vibrant colors, flat texture, sharp edges, gradient shading, modern graphic style.</h3>
+            <h6 style="line-height: 1.6;"> A street performer <span style="color: blue;">playing the guitar</span>. Low Poly Digital Art, <span style="color: blue;">geometric shapes</span>, vibrant colors, flat texture, sharp edges, gradient shading, modern graphic style.</h3>
             </div>
           </div>
           <!-- Video -->
           <div style="text-align: center;">
+            <!-- <video controls id="videocrafter" class="fixed-video"> -->
             <video controls style="width: 80%; height: auto;">
               <source src="src/video/style/prompt00-style02-VideoB.mp4" type="video/mp4">
             </video>
@@ -664,7 +675,7 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A street performer playing the guitar. Low Poly Digital Art, geometric shapes, vibrant colors, flat texture, sharp edges, gradient shading, modern graphic style.</h3>
+            <h6 style="line-height: 1.6;"> A street performer <span style="color: blue;">playing the guitar</span>. Low Poly Digital Art, <span style="color: blue;">geometric shapes</span>, vibrant colors, flat texture, sharp edges, gradient shading, modern graphic style.</h3>
             </div>
           </div>
           <!-- Video -->
@@ -674,7 +685,24 @@
             </video>
           </div>
         </div>
+        <div class="carousel-item">
+          <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; margin-bottom: 20px;">
 
+            <img src="src/img/style-reference-images/illustration_2.jpg" alt="Image" 
+                 style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
+            <!-- <div style="width: 60%; font-size: 3em;"> -->
+            <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
+            <p><strong> [Text Prompt]</strong></p>
+            <h6 style="line-height: 1.6;"> A street performer <span style="color: blue;">playing the guitar</span>. Low Poly Digital Art, <span style="color: blue;">geometric shapes</span>, vibrant colors, flat texture, sharp edges, gradient shading, modern graphic style.</h3>
+            </div>
+          </div>
+          <!-- Video -->
+          <div style="text-align: center;">
+            <video controls style="width: 80%; height: auto;">
+              <source src="src/video/style/prompt00-style02-VideoD.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
       </div>
       </div>
 
@@ -690,7 +718,7 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A wolf walking stealthily through the forest. Watercolor Painting, fluid brushstrokes, transparent washes, color blending, visible paper texture, impressionistic style.</h3>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;"> wolf walking</span> stealthily through the <span style="color: blue;"></span>forest</span>. Watercolor Painting, <span style="color: blue;">fluid brushstrokes</span>, transparent washes, color blending, visible paper texture, impressionistic style.</h3>
             </div>
           </div>
           <!-- Video -->
@@ -708,7 +736,7 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A wolf walking stealthily through the forest. Watercolor Painting, fluid brushstrokes, transparent washes, color blending, visible paper texture, impressionistic style.</h3>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;"> wolf walking</span> stealthily through the <span style="color: blue;"></span>forest</span>. Watercolor Painting, <span style="color: blue;">fluid brushstrokes</span>, transparent washes, color blending, visible paper texture, impressionistic style.</h3>
             </div>
           </div>
           <!-- Video -->
@@ -726,16 +754,38 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A wolf walking stealthily through the forest. Watercolor Painting, fluid brushstrokes, transparent washes, color blending, visible paper texture, impressionistic style.</h3>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;"> wolf walking</span> stealthily through the <span style="color: blue;"></span>forest</span>. Watercolor Painting, <span style="color: blue;">fluid brushstrokes</span>, transparent washes, color blending, visible paper texture, impressionistic style.</h3>
             </div>
           </div>
           <!-- Video -->
           <div style="text-align: center;">
-            <video controls style="width: 80%; height: auto;">
+            <!-- <video controls style="width: 80%; height: auto;"> -->
+              <video controls id="videocrafter" class="fixed-video">
               <source src="src/video/style/prompt05-style04-VideoC.mp4" type="video/mp4">
             </video>
           </div>
         </div>
+        <div class="carousel-item">
+          <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; margin-bottom: 20px;">
+
+            <img src="src/img/style-reference-images/oil_paint_2.jpg" alt="Image" 
+                 style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
+            <!-- <div style="width: 60%; font-size: 3em;"> -->
+            <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
+            <p><strong> [Text Prompt]</strong></p>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;"> wolf walking</span> stealthily through the <span style="color: blue;"></span>forest</span>. Watercolor Painting, <span style="color: blue;">fluid brushstrokes</span>, transparent washes, color blending, visible paper texture, impressionistic style.</h3>
+            </div>
+          </div>
+          <!-- Video -->
+          <div style="text-align: center;">
+            <!-- <video controls style="width: 80%; height: auto;"> -->
+              <!-- <video controls id="videocrafter" class="fixed-video"> -->
+              <video controls style="width: 80%; height: auto;">
+              <source src="src/video/style/prompt05-style04-VideoD.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
 
       </div>
       </div>
@@ -751,7 +801,7 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A hot air balloon floating in the sky. Ink and watercolor on paper, urban sketching style, detailed line work, washed colors, realistic shading, and a vintage feel.</h3>
+            <h6 style="line-height: 1.6;"> A hot <span style="color: blue;">air balloon floating in the sky</span>. Ink and watercolor on paper, <span style="color: blue;">urban sketching style</span>, detailed line work, washed colors, realistic shading, and a vintage feel.</h3>
             </div>
           </div>
           <!-- Video -->
@@ -769,7 +819,7 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A hot air balloon floating in the sky. Ink and watercolor on paper, urban sketching style, detailed line work, washed colors, realistic shading, and a vintage feel.</h3>
+            <h6 style="line-height: 1.6;"> A hot <span style="color: blue;">air balloon floating in the sky</span>. Ink and watercolor on paper, <span style="color: blue;">urban sketching style</span>, detailed line work, washed colors, realistic shading, and a vintage feel.</h3>
             </div>
           </div>
           <!-- Video -->
@@ -787,13 +837,33 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A hot air balloon floating in the sky. Ink and watercolor on paper, urban sketching style, detailed line work, washed colors, realistic shading, and a vintage feel.</h3>
+            <h6 style="line-height: 1.6;"> A hot <span style="color: blue;">air balloon floating in the sky</span>. Ink and watercolor on paper, <span style="color: blue;">urban sketching style</span>, detailed line work, washed colors, realistic shading, and a vintage feel.</h3>
             </div>
           </div>
           <!-- Video -->
           <div style="text-align: center;">
             <video controls style="width: 80%; height: auto;">
               <source src="src/video/style/prompt06-style01-VideoC.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; margin-bottom: 20px;">
+
+            <img src="src/img/style-reference-images/02_digital_art_3.png" alt="Image" 
+                 style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
+            <!-- <div style="width: 60%; font-size: 3em;"> -->
+            <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
+            <p><strong> [Text Prompt]</strong></p>
+            <h6 style="line-height: 1.6;"> A hot <span style="color: blue;">air balloon floating in the sky</span>. Ink and watercolor on paper, <span style="color: blue;">urban sketching style</span>, detailed line work, washed colors, realistic shading, and a vintage feel.</h3>
+            </div>
+          </div>
+          <!-- Video -->
+          <div style="text-align: center;">
+
+            <video controls id="videocrafter" class="fixed-video">
+              <source src="src/video/style/prompt06-style01-VideoD.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -814,7 +884,7 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A field of sunflowers on a sunny day. Manga Style, black and white digital inking, high contrast, detailed line work, cross-hatching for shadows, clean, no color.</h3>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;">field of sunflowers</span> on a sunny day. Manga Style, black and white digital inking, high contrast, detailed line work, cross-hatching for shadows, clean, <span style="color: blue;">no color</span>.</h3>
             </div>
           </div>
           <!-- Video -->
@@ -832,12 +902,13 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A field of sunflowers on a sunny day. Manga Style, black and white digital inking, high contrast, detailed line work, cross-hatching for shadows, clean, no color.</h3>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;">field of sunflowers</span> on a sunny day. Manga Style, black and white digital inking, high contrast, detailed line work, cross-hatching for shadows, clean, <span style="color: blue;">no color</span>.</h3>
             </div>
           </div>
           <!-- Video -->
           <div style="text-align: center;">
-            <video controls style="width: 80%; height: auto;">
+            <!-- <video controls id="videocrafter" class="fixed-video"> -->
+              <video controls style="width: 80%; height: auto;">
               <source src="src/video/style/prompt08-style00-VideoB.mp4" type="video/mp4">
             </video>
           </div>
@@ -850,17 +921,34 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A field of sunflowers on a sunny day. Manga Style, black and white digital inking, high contrast, detailed line work, cross-hatching for shadows, clean, no color.</h3>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;">field of sunflowers</span> on a sunny day. Manga Style, black and white digital inking, high contrast, detailed line work, cross-hatching for shadows, clean, <span style="color: blue;">no color</span>.</h3>
+            </div>
+          </div>
+          <!-- Video -->
+          <div style="text-align: center;">
+            <video controls id="videocrafter" class="fixed-video">
+              <source src="src/video/style/prompt08-style00-VideoC.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; margin-bottom: 20px;">
+
+            <img src="src/img/style-reference-images/line_1.jpeg" alt="Image" 
+                 style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
+            <!-- <div style="width: 60%; font-size: 3em;"> -->
+            <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
+            <p><strong> [Text Prompt]</strong></p>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;">field of sunflowers</span> on a sunny day. Manga Style, black and white digital inking, high contrast, detailed line work, cross-hatching for shadows, clean, <span style="color: blue;">no color</span>.</h3>
             </div>
           </div>
           <!-- Video -->
           <div style="text-align: center;">
             <video controls style="width: 80%; height: auto;">
-              <source src="src/video/style/prompt08-style00-VideoC.mp4" type="video/mp4">
+              <source src="src/video/style/prompt08-style00-VideoD.mp4" type="video/mp4">
             </video>
           </div>
         </div>
-
       </div>
       </div>
 
@@ -877,7 +965,7 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A campfire surrounded by tents. Manga-inspired digital art, dynamic composition, exaggerated proportions, sharp lines, cel-shading, high-contrast colors with a focus on sepia tones and blues.</h3>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;">campfire</span> surrounded by <span style="color: blue;">tents</span>. Manga-inspired digital art, <span style="color: blue;">dynamic composition</span>, exaggerated proportions, sharp lines, cel-shading, high-contrast colors with a focus on sepia tones and blues.</h3>
             </div>
           </div>
           <!-- Video -->
@@ -895,12 +983,13 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A campfire surrounded by tents. Manga-inspired digital art, dynamic composition, exaggerated proportions, sharp lines, cel-shading, high-contrast colors with a focus on sepia tones and blues.</h3>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;">campfire</span> surrounded by <span style="color: blue;">tents</span>. Manga-inspired digital art, <span style="color: blue;">dynamic composition</span>, exaggerated proportions, sharp lines, cel-shading, high-contrast colors with a focus on sepia tones and blues.</h3>
             </div>
           </div>
           <!-- Video -->
           <div style="text-align: center;">
-            <video controls style="width: 80%; height: auto;">
+
+              <video controls id="videocrafter" class="fixed-video">
               <source src="src/video/style/prompt09-style03-VideoB.mp4" type="video/mp4">
             </video>
           </div>
@@ -913,80 +1002,38 @@
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A campfire surrounded by tents. Manga-inspired digital art, dynamic composition, exaggerated proportions, sharp lines, cel-shading, high-contrast colors with a focus on sepia tones and blues.</h3>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;">campfire</span> surrounded by <span style="color: blue;">tents</span>. Manga-inspired digital art, <span style="color: blue;">dynamic composition</span>, exaggerated proportions, sharp lines, cel-shading, high-contrast colors with a focus on sepia tones and blues.</h3>
             </div>
           </div>
           <!-- Video -->
           <div style="text-align: center;">
-            <video controls style="width: 80%; height: auto;">
+            <!-- <video controls id="videocrafter" style="width: 80%; height: auto;"> -->
+              <video controls style="width: 80%; height: auto;">
               <source src="src/video/style/prompt09-style03-VideoC.mp4" type="video/mp4">
             </video>
           </div>
         </div>
+        <div class="carousel-item">
+          <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; margin-bottom: 20px;">
 
+            <img src="src/img/style-reference-images/anime_2.jpeg" alt="Image" 
+                 style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
+            <!-- <div style="width: 60%; font-size: 3em;"> -->
+            <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
+            <p><strong> [Text Prompt]</strong></p>
+            <h6 style="line-height: 1.6;"> A <span style="color: blue;">campfire</span> surrounded by <span style="color: blue;">tents</span>. Manga-inspired digital art, <span style="color: blue;">dynamic composition</span>, exaggerated proportions, sharp lines, cel-shading, high-contrast colors with a focus on sepia tones and blues.</h3>
+            </div>
+          </div>
+          <!-- Video -->
+          <div style="text-align: center;">
+            <!-- <video controls id="videocrafter" style="width: 80%; height: auto;"> -->
+              <video controls style="width: 80%; height: auto;">
+              <source src="src/video/style/prompt09-style03-VideoD.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
       </div>
       </div>
-
-
-        <!-- <div id="carousel" class="carousel carousel-vid" data-bs-ride="carousel" data-bs-interval="false" style="overflow: hidden; margin-top: 0px; font-weight: bold; font-size: 1.2em">
-    
-    <div style="display: flex; align-items: center; gap: 10px;">
-        <img src="src/img/emma.webp" alt="Image" style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
-      <video id="1a" preload="" controls=""  style="width: auto; height: 95%; border: none; margin: 0; padding: 0;">
-        <source src="src/video/TestSheet1-Video-A.mp4" type="video/mp4">
-      </video>
-      <br>
-    </div>
-
-    <div style="display: flex; align-items: center; gap: 10px;">
-        <img src="src/img/emma.webp" alt="Image" style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
-      <video id="1b" preload="" controls=""  style="width: auto; height: 95%; border: none; margin: 0; padding: 0;">
-        <source src="src/video/TestSheet1-Video-B.mp4" type="video/mp4">
-      </video>
-      <br>
-    </div>    
-
-    <div style="display: flex; align-items: center; gap: 10px;">
-        <img src="src/img/emma.webp" alt="Image" style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
-      <video id="1c" preload="" controls=""  style="width: auto; height: 95%; border: none; margin: 0; padding: 0;">
-        <source src="src/video/TestSheet1-Video-C.mp4" type="video/mp4">
-      </video>
-      <br>
-    </div>
-
-    <div style="display: flex; align-items: center; gap: 10px;">
-        <img src="src/img/emma.webp" alt="Image" style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
-      <video id="1d" preload="" controls=""  style="width: auto; height: 95%; border: none; margin: 0; padding: 0;">
-        <source src="src/video/TestSheet1-Video-D.mp4" type="video/mp4">
-      </video>
-      <br>
-    </div>
-
-
-    <div style="display: flex; align-items: center; gap: 10px;">
-        <img src="src/img/emma.webp" alt="Image" style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
-      <video id="1e" preload="" controls=""  style="width: auto; height: 95%; border: none; margin: 0; padding: 0;">
-        <source src="src/video/TestSheet1-Video-E.mp4" type="video/mp4">
-      </video>
-      <br>
-    </div>
-
-    <div style="display: flex; align-items: center; gap: 10px;">
-        <img src="src/img/emma.webp" alt="Image" style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
-      <video id="1f" preload="" controls=""  style="width: auto; height: 95%; border: none; margin: 0; padding: 0;">
-        <source src="src/video/TestSheet1-Video-F.mp4" type="video/mp4">
-      </video>
-      <br>
-    </div>
-    </div> -->
-<!-- 
-      <br>
-      <h4> > Please evaluate each video according to the questions in <b>answer sheet #1. </b></h4>
-    </div>
-
-      <br>
-      <h5> > Please evaluate each video according to the questions in <b>answer sheet #4. </b></h5>
-    </div>
 
 
     <!-- ---- -->
