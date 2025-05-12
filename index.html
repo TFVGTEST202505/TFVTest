@@ -2,7 +2,7 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <!-- Title -->
-    <title>Video Quality Test Sheet 1</title>
+    <title>Video Quality Test Sheet</title>
     <link href="./src/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/bulma.min.css">
     <link rel="stylesheet" href="./src/css/bulma-carousel.min.css">
@@ -39,17 +39,17 @@
     
     <body>
     <div class="content">
-      <h1><strong>Video Quality Test Sheet 1</strong></h1>
-      <h2 style="text-align: center;"> Go to the answer sheet 1 (google forms):
+      <h1><strong>Video Quality Test Sheet</strong></h1>
+      <h2 style="text-align: center;"> Go to the answer sheet (google forms):
         <a href="https://forms.gle/L4U3tCwNHUscXjjt5" target="_blank" style="color: inherit; text-decoration: none;"> https://forms.gle/L4U3tCwNHUscXjjt5 </a></h2>
     </div>
 
     <div class="content">
       <h3 style="text-align: center;"> !! Please evaluate following 5 keyframes guided videos !!</h3>
       <h4 style="text-align: left;">
-        For each video set (#1 - s#5), you will be presented with five videos (Video A-E), describing the same scene. Please carefully watch all five videos and rate each one from 1 to 5 based on the following criteria.
-      <h4 style="text-align: left;"> <strong>1. Frame Condition</strong> </h5>
-      <h6 style="text-align: left;"> The video should be semantically <span style="color: blue;">similar with the given frames.</span></h6>
+        For each video set (#1 - #5), you will be presented with five videos (Video A-E), describing the same scene. Please carefully watch all five videos and rate each one from 1 to 5 based on the following criteria.
+      <h4 style="text-align: left;"> <strong>1. Frame Similarity</strong> </h5>
+      <h6 style="text-align: left;"> The video should be semantically <span style="color: blue;">similar with the first and the last frames.</span></h6>
       <h4 style="text-align: left;"> <strong>2. Overall Video Quality </strong></h5>
       <h6 style="text-align: left;"> The video should be <span style="color: blue;">(1) smooth dynamics</span> and <span style="color: blue;">(2) consistency between frames.</span></h6>
       </h4>
@@ -638,8 +638,8 @@
       <h6 style="text-align: left;"> Is the video well <span style="color: blue;">aligned with</span> the reference <span style="color: blue;">style image?</span></h6>
       <h4 style="text-align: left;"> <strong>2. Text Alignment </strong></h5>
       <h6 style="text-align: left;"> Is the video well <span style="color: blue;">aligned with</span> the <span style="color: blue;">text</span> prompt?</h6>
-      <h4 style="text-align: left;"> <strong>3. Temporal Consistency </strong></h5>
-      <h6 style="text-align: left;"> Is the video <span style="color: blue;">smooth and temporally consistent</span>, with <span style="color: blue;">natural and rich motion</span> rather than static frames?</h6>
+      <h4 style="text-align: left;"> <strong>3. Motion Dynamics </strong></h5>
+      <h6 style="text-align: left;"> Is the video smooth and temporally consistent, with <span style="color: blue;">natural and rich motion</span> rather than static frames?</h6>
       <h4 style="text-align: left;"> <strong>4. Overall Preference </strong></h5>
       <h6 style="text-align: left;"> Taking all aspects into account, which video do you <span style="color: blue;">prefer overall?</span></h6>
     </h4>
@@ -663,7 +663,7 @@
           <!-- Video -->
           <div style="text-align: center;">
             <!-- <video controls style="width: 80%; height: auto;"> -->
-            <video controls id="videocrafter" class="fixed-video">
+              <video controls style="width: 80%; height: auto;">
               <source src="src/video/style/prompt00-style02-VideoA.mp4" type="video/mp4">
             </video>
           </div>
@@ -718,7 +718,7 @@
           </div>
           <!-- Video -->
           <div style="text-align: center;">
-            <video controls style="width: 80%; height: auto;">
+            <video controls id="videocrafter" class="fixed-video">
               <source src="src/video/style/prompt00-style02-VideoD.mp4" type="video/mp4">
             </video>
           </div>
@@ -980,12 +980,12 @@
         <div class="carousel-item">
           <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; margin-bottom: 20px;">
 
-            <img src="src/img/style-reference-images/anime_2.jpeg" alt="Image" 
+            <img src="src/img/style-reference-images/image.png" alt="Image" 
                  style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A <span style="color: blue;">campfire</span> surrounded by <span style="color: blue;">tents</span>. Manga-inspired digital art, <span style="color: blue;">dynamic composition</span>, exaggerated proportions, sharp lines, cel-shading, high-contrast colors with a focus on sepia tones and blues.</h3>
+            <h6 style="line-height: 1.6;">A New York City street scene with a man and a woman walking down the street, a dog running after them, and <span style="color: blue;">a bicyclist passing by</span>, in <span style="color: blue;">watercolor painting style.</span></h3>            
             </div>
           </div>
           <!-- Video -->
@@ -998,12 +998,12 @@
         <div class="carousel-item">
           <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; margin-bottom: 20px;">
 
-            <img src="src/img/style-reference-images/anime_2.jpeg" alt="Image" 
+            <img src="src/img/style-reference-images/image.png" alt="Image" 
                  style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A <span style="color: blue;">campfire</span> surrounded by <span style="color: blue;">tents</span>. Manga-inspired digital art, <span style="color: blue;">dynamic composition</span>, exaggerated proportions, sharp lines, cel-shading, high-contrast colors with a focus on sepia tones and blues.</h3>
+            <h6 style="line-height: 1.6;">A New York City street scene with a man and a woman walking down the street, a dog running after them, and <span style="color: blue;">a bicyclist passing by</span>, in <span style="color: blue;">watercolor painting style.</span></h3>
             </div>
           </div>
           <!-- Video -->
@@ -1017,12 +1017,12 @@
         <div class="carousel-item">
           <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; margin-bottom: 20px;">
 
-            <img src="src/img/style-reference-images/anime_2.jpeg" alt="Image" 
+            <img src="src/img/style-reference-images/image.png" alt="Image" 
                  style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A <span style="color: blue;">campfire</span> surrounded by <span style="color: blue;">tents</span>. Manga-inspired digital art, <span style="color: blue;">dynamic composition</span>, exaggerated proportions, sharp lines, cel-shading, high-contrast colors with a focus on sepia tones and blues.</h3>
+            <h6 style="line-height: 1.6;">A New York City street scene with a man and a woman walking down the street, a dog running after them, and <span style="color: blue;">a bicyclist passing by</span>, in <span style="color: blue;">watercolor painting style.</span></h3>
             </div>
           </div>
           <!-- Video -->
@@ -1036,12 +1036,12 @@
         <div class="carousel-item">
           <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; margin-bottom: 20px;">
 
-            <img src="src/img/style-reference-images/anime_2.jpeg" alt="Image" 
+            <img src="src/img/style-reference-images/image.png" alt="Image" 
                  style="width: 30%; height: auto; border: none; margin: 0; padding: 0;">
             <!-- <div style="width: 60%; font-size: 3em;"> -->
             <div style="width: 60%; font-size: 1.2em; line-height: 1.5;">
             <p><strong> [Text Prompt]</strong></p>
-            <h6 style="line-height: 1.6;"> A <span style="color: blue;">campfire</span> surrounded by <span style="color: blue;">tents</span>. Manga-inspired digital art, <span style="color: blue;">dynamic composition</span>, exaggerated proportions, sharp lines, cel-shading, high-contrast colors with a focus on sepia tones and blues.</h3>
+            <h6 style="line-height: 1.6;">A New York City street scene with a man and a woman walking down the street, a dog running after them, and <span style="color: blue;">a bicyclist passing by</span>, in <span style="color: blue;">watercolor painting style.</span></h3>
             </div>
           </div>
           <!-- Video -->
@@ -1058,7 +1058,7 @@
 
     <!-- ---- -->
     <div class="content">
-      <h3 style="text-align:center"> Please check your the number of your answer sheet (Answer Sheet 1) again.</h3>
+      <h3 style="text-align:center"> Please check your answer sheet again.</h3>
       <h3 style="text-align:center"> Thank you for your participation!</h3>
     </div>
 
